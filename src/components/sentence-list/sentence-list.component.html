@@ -1,0 +1,16 @@
+<table border="1" cellpadding="2" cellspacing="0" style="width: 40%">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Questions</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let sentence of sentences">
+            <td>{{ sentence.sentence }}</td>
+            <td>{{ sentence.translation }}</td>
+        </tr>
+    </tbody>
+</table>

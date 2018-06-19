@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup" (ngSubmit)="submit()">
+    <div class="row">
+      <input type="text" formControlName="sentence" placeholder="Sentence" class="control" />
+      <input type="text" formControlName="translation" placeholder="Translation" class="control" />
+    </div>
+
+    <div class="row">
+        <button type="submit" [disabled]="!formGroup.valid">Save</button>
+    </div>
+</form>
