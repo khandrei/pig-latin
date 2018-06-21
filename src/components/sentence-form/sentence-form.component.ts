@@ -11,7 +11,7 @@ import { SentenceService } from '../../services/sentence.service';
 
 @Component({
     selector: 'sentence-form',
-    template: require('./sentence-form.component.html')
+    templateUrl: './sentence-form.component.html'
 })
 export class SentenceFormComponent {
     formGroup: FormGroup;

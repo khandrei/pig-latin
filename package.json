@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "tslint ./src/**/*.ts",
-    "start": "webpack-dev-server --inline --config ./webpack/webpack.dev.js",
-    "test": "karma start ./karma/karma.conf.js"
+    "grunt": "grunt",
+    "start": "concurrent \"grunt browserSync\" \"grunt watch\" "
   },
   "keywords": [],
   "author": "",
@@ -21,30 +21,29 @@
     "@angular/platform-browser": "^2.0.0",
     "@angular/platform-browser-dynamic": "^2.0.0",
     "@angular/router": "^3.4.5",
+    "bootstrap": "^3.3.7",
     "es6-shim": "^0.35.1",
+    "jquery": "^3.3.1",
     "reflect-metadata": "^0.1.3",
     "rxjs": "^5.0.1",
+    "typings": "^2.1.1",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^2.22.0",
-    "jasmine-core": "^2.4.1",
-    "karma": "^1.1.0",
-    "karma-chrome-launcher": "^1.0.1",
-    "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.1",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^1.7.0",
-    "phantomjs-prebuilt": "^2.1.7",
-    "raw-loader": "^0.5.1",
-    "ts-loader": "^0.8.2",
+    "autoprefixer": "^8.6.3",
+    "concurrently": "^1.0.0",
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-newer": "^1.3.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-ts": "^6.0.0-beta.19",
     "tslint": "^3.13.0",
-    "tslint-loader": "^2.1.5",
     "typescript": "~2.0.3",
-    "typings": "^1.3.1",
-    "webpack": "^1.13.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-command": "^0.2.1",
-    "webpack-dev-server": "^1.14.1"
+    "typings": "^1.3.1"
   }
 }
