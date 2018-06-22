@@ -1,10 +1,23 @@
 <form [formGroup]="formGroup" (ngSubmit)="submit()">
     <div class="row">
-      <input type="text" formControlName="sentence" placeholder="Sentence" class="control" />
-      <input type="text" formControlName="translation" placeholder="Translation" class="control" />
-    </div>
+      <div class="col-md-4 col-xs-8">
+        <div class="form-group">
+          <input type="text" formControlName="sentence" class="form-control" />
+        </div>
+      </div>
 
-    <div class="row">
-        <button type="submit" [disabled]="!formGroup.valid">Save</button>
+      <div class="col-md-2 col-xs-4">
+          <button type="button" class="btn btn-default" (click)="translate()">translate</button>
+      </div>
+
+      <div class="col-md-4 col-xs-8">
+        <div class="form-group">
+          <input type="text" formControlName="translation" placeholder="Translation" class="form-control" />
+        </div>
+      </div>
+
+      <div class="col-md-2 col-xs-4">
+        <button type="submit" [disabled]="!formGroup.valid" class="btn btn-default">Save</button>
+      </div>
     </div>
 </form>

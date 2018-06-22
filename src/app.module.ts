@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { SentenceService } from './services/sentence.service';
+import { TranslationService } from './services/translation.service';
 
 import {
     AppComponent,
@@ -24,7 +25,8 @@ import {
         ReactiveFormsModule
     ],
     providers: [
-        SentenceService
+        SentenceService,
+        TranslationService
     ]
 })
 export class AppModule {}
