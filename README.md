@@ -20,12 +20,6 @@ To install all the dependencies run:
 npm i
 ```
 
-Run tests:
-
-```shell
-npm run test
-```
-
 To run project use:
 
 ```shell
