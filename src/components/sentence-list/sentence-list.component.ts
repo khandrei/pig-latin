@@ -5,7 +5,8 @@ import { SentenceService } from '../../services/sentence.service';
 
 @Component({
     selector: 'sentence-list',
-    template: './sentence-list.component.html'
+    template: require('./sentence-list.component.html'),
+    styles: []
 })
 export class SentenceListComponent {
     sentences: Array<SentenceData> = [];

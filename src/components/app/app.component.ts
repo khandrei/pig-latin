@@ -4,7 +4,7 @@ import { SentenceData } from '../../models';
 
 @Component({
     selector: 'pig-latin-app',
-    template: './app.component.html'
+    template: require('./app.component.html')
 })
 export class AppComponent {
     sentences: SentenceData[] = null;
